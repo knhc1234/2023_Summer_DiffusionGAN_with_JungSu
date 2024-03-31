@@ -1,0 +1,1246 @@
+Loading training set...
+
+Num images:  93422
+Image shape: [3, 256, 256]
+Label shape: [0]
+
+Constructing networks...
+
+Generator              Parameters  Buffers  Output shape         Datatype
+---                    ---         ---      ---                  ---     
+mapping                -           -        [16, 1, 256]         float32 
+synthesis.init.init    16785408    16385    [16, 2048, 4, 4]     float32 
+synthesis.feat_8.0     -           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.1     37748736    20480    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.2     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.3     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.4     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_8.5     18874368    11264    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.6     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.7     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.8     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_16.0    -           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.1    9437184     10240    [16, 1024, 16, 16]   float32 
+synthesis.feat_16.2    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.3    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.4    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_16.5    4718592     5632     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.6    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.7    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.8    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_32.0    -           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.1    2359296     5120     [16, 512, 32, 32]    float32 
+synthesis.feat_32.2    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.3    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.4    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_32.5    1179648     2816     [16, 512, 32, 32]    float32 
+synthesis.feat_32.6    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.7    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.8    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_64.0    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.1    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.2    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.3    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.4    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.5    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.6    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.7    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.8    -           -        [16, 256, 64, 64]    float32 
+synthesis.se_64.main   8454144     33536    [16, 256, 1, 1]      float32 
+synthesis.se_64        -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_128.0   -           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.1   589824      2560     [16, 256, 128, 128]  float32 
+synthesis.feat_128.2   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.3   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.4   -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_128.5   294912      1408     [16, 256, 128, 128]  float32 
+synthesis.feat_128.6   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.7   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.8   -           -        [16, 128, 128, 128]  float32 
+synthesis.se_128.main  2113536     16768    [16, 128, 1, 1]      float32 
+synthesis.se_128       -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_256.0   -           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.1   147456      1280     [16, 128, 256, 256]  float32 
+synthesis.feat_256.2   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.3   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.4   -           -        [16, 64, 256, 256]   float32 
+synthesis.feat_256.5   73728       704      [16, 128, 256, 256]  float32 
+synthesis.feat_256.6   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.7   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.8   -           -        [16, 64, 256, 256]   float32 
+synthesis.se_256.main  528384      8384     [16, 64, 1, 1]       float32 
+synthesis.se_256       -           -        [16, 64, 256, 256]   float32 
+synthesis.to_big       1731        579      [16, 3, 256, 256]    float32 
+---                    ---         ---      ---                  ---     
+Total                  105684175   160720   -                    -       
+
+
+ProjectedDiscriminator                                               Parameters  Buffers  Output shape        Datatype
+---                                                                  ---         ---      ---                 ---     
+feature_network.pretrained.layer0.0                                  864         -        [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.1                                  64          65       [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.3                                  896         98       [16, 16, 128, 128]  float32 
+feature_network.pretrained.layer0.4                                  13968       1062     [16, 24, 64, 64]    float32 
+feature_network.pretrained.layer1.0                                  39712       1702     [16, 40, 32, 32]    float32 
+feature_network.pretrained.layer2.0                                  198480      5289     [16, 80, 16, 16]    float32 
+feature_network.pretrained.layer2.1                                  446784      7977     [16, 112, 16, 16]   float32 
+feature_network.pretrained.layer3.0                                  1652640     18060    [16, 192, 8, 8]     float32 
+feature_network.pretrained.layer3.1                                  605440      5251     [16, 320, 8, 8]     float32 
+feature_network.diffusion                                            -           -        [16, 24, 64, 64]    float32 
+feature_network.diffusion                                            -           -        [16, 40, 32, 32]    float32 
+feature_network.diffusion                                            -           -        [16, 112, 16, 16]   float32 
+feature_network.diffusion                                            -           -        [16, 320, 8, 8]     float32 
+feature_network.scratch.layer0_ccm                                   1600        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer1_ccm                                   5248        -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer2_ccm                                   28928       -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer3_ccm                                   164352      -        [16, 512, 8, 8]     float32 
+feature_network.scratch.layer3_csm.out_conv                          131328      -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.skip_add.activation_post_process  -           -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.out_conv                          32896       -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.skip_add.activation_post_process  -           -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.out_conv                          8256        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.skip_add.activation_post_process  -           -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.out_conv                          4160        -        [16, 64, 128, 128]  float32 
+discriminator.mini_discs.0.main                                      2829120     19269    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.1.main                                      2763392     18052    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.2.main                                      2631936     16643    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.3.main                                      2106880     13826    [16, 1, 5, 5]       float32 
+discriminator                                                        -           -        [16, 100]           float32 
+---                                                                  ---         ---      ---                 ---     
+Total                                                                13666944    107294   -                   -       
+
+Setting up augmentation...
+Distributing across 1 GPUs...
+Setting up training phases...
+Exporting sample images...
+Initializing logs...
+Training for 100 kimg...
+
+restart
+16 100 0 4
+0 False
+tick 0     kimg 0.0      time 5m 41s       sec/tick 271.3   sec/kimg 16956.29 maintenance 69.9   cpumem 4.41   gpumem 10.00  reserved 10.13  augment 0.000 T 5.0
+1 16 11.311230897903442
+False
+restart
+32 100 16 4
+0 False
+tick 1     kimg 0.0      time 6m 15s       sec/tick 22.4    sec/kimg 1398.40 maintenance 11.3   cpumem 11.03  gpumem 10.90  reserved 12.61  augment 0.000 T 5.0
+2 32 1.662187099456787
+False
+restart
+48 100 32 4
+0 False
+tick 2     kimg 0.0      time 6m 38s       sec/tick 21.2    sec/kimg 1327.47 maintenance 1.7    cpumem 11.03  gpumem 10.90  reserved 12.61  augment 0.000 T 5.0
+3 48 1.4143261909484863
+False
+restart
+64 100 48 4
+0 False
+tick 3     kimg 0.1      time 7m 01s       sec/tick 21.4    sec/kimg 1334.45 maintenance 1.4    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.000 T 5.0
+4 64 0.007939577102661133
+False
+restart
+80 100 64 4
+0 False
+tick 4     kimg 0.1      time 7m 20s       sec/tick 19.2    sec/kimg 1197.20 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.000 T 5.0
+5 80 1.6034071445465088
+False
+restart
+96 100 80 4
+0 False
+tick 5     kimg 0.1      time 7m 40s       sec/tick 18.6    sec/kimg 1162.89 maintenance 1.6    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.000 T 5.0
+6 96 1.4591732025146484
+False
+restart
+112 100 96 4
+0 False
+tick 6     kimg 0.1      time 8m 01s       sec/tick 19.6    sec/kimg 1224.03 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.000 T 5.0
+7 112 1.4664359092712402
+False
+restart
+128 100 112 4
+0 False
+tick 7     kimg 0.1      time 8m 23s       sec/tick 20.9    sec/kimg 1304.58 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.001 T 5.0
+8 128 0.008160114288330078
+False
+restart
+144 100 128 4
+0 False
+tick 8     kimg 0.1      time 8m 43s       sec/tick 20.0    sec/kimg 1250.88 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.001 T 5.0
+9 144 1.4670240879058838
+False
+restart
+160 100 144 4
+0 False
+tick 9     kimg 0.2      time 9m 04s       sec/tick 19.4    sec/kimg 1211.63 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.001 T 5.0
+10 160 1.728240728378296
+False
+restart
+176 100 160 4
+0 False
+tick 10    kimg 0.2      time 9m 25s       sec/tick 19.3    sec/kimg 1205.57 maintenance 1.7    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.001 T 5.0
+11 176 1.509443759918213
+False
+restart
+192 100 176 4
+0 False
+tick 11    kimg 0.2      time 9m 48s       sec/tick 21.3    sec/kimg 1329.02 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.001 T 6.0
+12 192 0.006983280181884766
+False
+restart
+208 100 192 4
+0 False
+tick 12    kimg 0.2      time 10m 06s      sec/tick 18.3    sec/kimg 1143.55 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.001 T 6.0
+13 208 1.3074300289154053
+False
+restart
+224 100 208 4
+0 False
+tick 13    kimg 0.2      time 10m 28s      sec/tick 20.0    sec/kimg 1247.05 maintenance 1.3    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.001 T 6.0
+14 224 1.4998927116394043
+False
+restart
+240 100 224 4
+0 False
+tick 14    kimg 0.2      time 10m 49s      sec/tick 20.0    sec/kimg 1249.85 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.001 T 6.0
+15 240 1.6347570419311523
+False
+restart
+256 100 240 4
+0 False
+tick 15    kimg 0.3      time 11m 12s      sec/tick 21.6    sec/kimg 1351.62 maintenance 1.6    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.002 T 6.0
+16 256 0.007953405380249023
+False
+restart
+272 100 256 4
+0 False
+tick 16    kimg 0.3      time 11m 32s      sec/tick 19.6    sec/kimg 1228.12 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.002 T 6.0
+17 272 1.473318338394165
+False
+restart
+288 100 272 4
+0 False
+tick 17    kimg 0.3      time 11m 53s      sec/tick 19.9    sec/kimg 1244.90 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.002 T 6.0
+18 288 1.3081059455871582
+False
+restart
+304 100 288 4
+0 False
+tick 18    kimg 0.3      time 12m 14s      sec/tick 19.7    sec/kimg 1232.71 maintenance 1.3    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.002 T 6.0
+19 304 1.3190407752990723
+False
+restart
+320 100 304 4
+0 False
+tick 19    kimg 0.3      time 12m 35s      sec/tick 19.7    sec/kimg 1229.65 maintenance 1.3    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.003 T 6.0
+20 320 0.008379936218261719
+False
+restart
+336 100 320 4
+0 False
+tick 20    kimg 0.3      time 12m 56s      sec/tick 20.1    sec/kimg 1258.77 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.003 T 6.0
+21 336 1.466141700744629
+False
+restart
+352 100 336 4
+0 False
+tick 21    kimg 0.4      time 13m 16s      sec/tick 18.7    sec/kimg 1168.42 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.003 T 6.0
+22 352 1.4697177410125732
+False
+restart
+368 100 352 4
+0 False
+tick 22    kimg 0.4      time 13m 37s      sec/tick 20.0    sec/kimg 1247.42 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.003 T 6.0
+23 368 1.598250150680542
+False
+restart
+384 100 368 4
+0 False
+tick 23    kimg 0.4      time 14m 00s      sec/tick 21.1    sec/kimg 1321.47 maintenance 1.6    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.003 T 7.0
+24 384 0.007980585098266602
+False
+restart
+400 100 384 4
+0 False
+tick 24    kimg 0.4      time 14m 18s      sec/tick 18.6    sec/kimg 1165.31 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.003 T 7.0
+25 400 1.2244017124176025
+False
+restart
+416 100 400 4
+0 False
+tick 25    kimg 0.4      time 14m 37s      sec/tick 17.4    sec/kimg 1085.48 maintenance 1.2    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.003 T 7.0
+26 416 1.3611762523651123
+False
+restart
+432 100 416 4
+0 False
+tick 26    kimg 0.4      time 14m 57s      sec/tick 18.8    sec/kimg 1176.86 maintenance 1.4    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.003 T 7.0
+27 432 1.4364724159240723
+False
+restart
+448 100 432 4
+0 False
+tick 27    kimg 0.4      time 15m 20s      sec/tick 21.0    sec/kimg 1315.17 maintenance 1.4    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.004 T 7.0
+28 448 0.0077266693115234375
+False
+restart
+464 100 448 4
+0 False
+tick 28    kimg 0.5      time 15m 39s      sec/tick 19.7    sec/kimg 1233.50 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.004 T 7.0
+29 464 1.5978341102600098
+False
+restart
+480 100 464 4
+0 False
+tick 29    kimg 0.5      time 16m 00s      sec/tick 19.3    sec/kimg 1203.72 maintenance 1.6    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.004 T 7.0
+30 480 1.287963628768921
+False
+restart
+496 100 480 4
+0 False
+tick 30    kimg 0.5      time 16m 22s      sec/tick 19.9    sec/kimg 1242.45 maintenance 1.3    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.004 T 7.0
+31 496 1.6151981353759766
+False
+restart
+512 100 496 4
+0 False
+tick 31    kimg 0.5      time 16m 45s      sec/tick 21.5    sec/kimg 1342.44 maintenance 1.6    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.004 T 7.0
+32 512 0.00897836685180664
+False
+restart
+528 100 512 4
+0 False
+tick 32    kimg 0.5      time 17m 03s      sec/tick 18.9    sec/kimg 1179.05 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.004 T 7.0
+33 528 1.2301445007324219
+False
+restart
+544 100 528 4
+0 False
+tick 33    kimg 0.5      time 17m 25s      sec/tick 20.1    sec/kimg 1254.97 maintenance 1.2    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.004 T 7.0
+34 544 1.6637048721313477
+False
+restart
+560 100 544 4
+0 False
+tick 34    kimg 0.6      time 17m 45s      sec/tick 18.8    sec/kimg 1173.16 maintenance 1.7    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.004 T 7.0
+35 560 1.4669818878173828
+False
+restart
+576 100 560 4
+0 False
+tick 35    kimg 0.6      time 18m 08s      sec/tick 21.3    sec/kimg 1332.20 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.005 T 8.0
+36 576 0.007799625396728516
+False
+restart
+592 100 576 4
+0 False
+tick 36    kimg 0.6      time 18m 26s      sec/tick 18.2    sec/kimg 1137.36 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.005 T 8.0
+37 592 1.46928071975708
+False
+restart
+608 100 592 4
+0 False
+tick 37    kimg 0.6      time 18m 47s      sec/tick 19.4    sec/kimg 1214.62 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.005 T 8.0
+38 608 1.6962559223175049
+False
+restart
+624 100 608 4
+0 False
+tick 38    kimg 0.6      time 19m 08s      sec/tick 19.6    sec/kimg 1227.33 maintenance 1.7    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.005 T 8.0
+39 624 1.662106990814209
+False
+restart
+640 100 624 4
+0 False
+tick 39    kimg 0.6      time 19m 31s      sec/tick 20.8    sec/kimg 1299.73 maintenance 1.7    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.006 T 8.0
+40 640 0.008313894271850586
+False
+restart
+656 100 640 4
+0 False
+tick 40    kimg 0.7      time 19m 50s      sec/tick 19.3    sec/kimg 1205.35 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.006 T 8.0
+41 656 1.4672200679779053
+False
+restart
+672 100 656 4
+0 False
+tick 41    kimg 0.7      time 20m 11s      sec/tick 19.4    sec/kimg 1212.81 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.006 T 8.0
+42 672 1.6610074043273926
+False
+restart
+688 100 672 4
+0 False
+tick 42    kimg 0.7      time 20m 32s      sec/tick 19.4    sec/kimg 1212.13 maintenance 1.7    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.006 T 8.0
+43 688 1.5479233264923096
+False
+restart
+704 100 688 4
+0 False
+tick 43    kimg 0.7      time 20m 54s      sec/tick 20.6    sec/kimg 1290.42 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.006 T 8.0
+44 704 0.007979393005371094
+False
+restart
+720 100 704 4
+0 False
+tick 44    kimg 0.7      time 21m 14s      sec/tick 19.7    sec/kimg 1231.21 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.006 T 8.0
+45 720 1.3054423332214355
+False
+restart
+736 100 720 4
+0 False
+tick 45    kimg 0.7      time 21m 35s      sec/tick 19.2    sec/kimg 1199.87 maintenance 1.3    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.006 T 8.0
+46 736 1.260392189025879
+False
+restart
+752 100 736 4
+0 False
+tick 46    kimg 0.8      time 21m 55s      sec/tick 19.3    sec/kimg 1208.56 maintenance 1.3    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.006 T 8.0
+47 752 1.468116044998169
+False
+restart
+768 100 752 4
+0 False
+tick 47    kimg 0.8      time 22m 18s      sec/tick 21.6    sec/kimg 1348.29 maintenance 1.5    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.007 T 8.0
+48 768 0.007007598876953125
+False
+restart
+784 100 768 4
+0 False
+tick 48    kimg 0.8      time 22m 38s      sec/tick 19.6    sec/kimg 1224.29 maintenance 0.0    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.007 T 8.0
+49 784 1.5881459712982178
+False
+restart
+800 100 784 4
+0 False
+tick 49    kimg 0.8      time 22m 58s      sec/tick 19.1    sec/kimg 1196.17 maintenance 1.6    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.007 T 8.0
+50 800 1.4432718753814697
+False
+restart
+816 100 800 4
+0 False
+tick 50    kimg 0.8      time 23m 19s      sec/tick 19.1    sec/kimg 1192.98 maintenance 1.4    cpumem 10.91  gpumem 10.90  reserved 12.61  augment 0.007 T 8.0
+Evaluating metrics...
+
+Aborted!
+Loading training set...
+
+Num images:  93422
+Image shape: [3, 256, 256]
+Label shape: [0]
+
+Constructing networks...
+Resuming from "training-runs\00002-fastgan-lsun_church200k-gpus1-batch16-d_pos-first-noise_sd-0.5-target0.45-ada_kimg100\network-snapshot.pkl"
+
+Generator              Parameters  Buffers  Output shape         Datatype
+---                    ---         ---      ---                  ---     
+mapping                -           -        [16, 1, 256]         float32 
+synthesis.init.init    16785408    16385    [16, 2048, 4, 4]     float32 
+synthesis.feat_8.0     -           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.1     37748736    20480    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.2     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.3     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.4     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_8.5     18874368    11264    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.6     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.7     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.8     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_16.0    -           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.1    9437184     10240    [16, 1024, 16, 16]   float32 
+synthesis.feat_16.2    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.3    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.4    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_16.5    4718592     5632     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.6    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.7    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.8    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_32.0    -           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.1    2359296     5120     [16, 512, 32, 32]    float32 
+synthesis.feat_32.2    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.3    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.4    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_32.5    1179648     2816     [16, 512, 32, 32]    float32 
+synthesis.feat_32.6    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.7    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.8    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_64.0    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.1    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.2    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.3    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.4    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.5    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.6    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.7    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.8    -           -        [16, 256, 64, 64]    float32 
+synthesis.se_64.main   8454144     33536    [16, 256, 1, 1]      float32 
+synthesis.se_64        -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_128.0   -           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.1   589824      2560     [16, 256, 128, 128]  float32 
+synthesis.feat_128.2   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.3   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.4   -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_128.5   294912      1408     [16, 256, 128, 128]  float32 
+synthesis.feat_128.6   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.7   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.8   -           -        [16, 128, 128, 128]  float32 
+synthesis.se_128.main  2113536     16768    [16, 128, 1, 1]      float32 
+synthesis.se_128       -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_256.0   -           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.1   147456      1280     [16, 128, 256, 256]  float32 
+synthesis.feat_256.2   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.3   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.4   -           -        [16, 64, 256, 256]   float32 
+synthesis.feat_256.5   73728       704      [16, 128, 256, 256]  float32 
+synthesis.feat_256.6   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.7   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.8   -           -        [16, 64, 256, 256]   float32 
+synthesis.se_256.main  528384      8384     [16, 64, 1, 1]       float32 
+synthesis.se_256       -           -        [16, 64, 256, 256]   float32 
+synthesis.to_big       1731        579      [16, 3, 256, 256]    float32 
+---                    ---         ---      ---                  ---     
+Total                  105684175   160720   -                    -       
+
+
+ProjectedDiscriminator                                               Parameters  Buffers  Output shape        Datatype
+---                                                                  ---         ---      ---                 ---     
+feature_network.pretrained.layer0.0                                  864         -        [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.1                                  64          65       [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.3                                  896         98       [16, 16, 128, 128]  float32 
+feature_network.pretrained.layer0.4                                  13968       1062     [16, 24, 64, 64]    float32 
+feature_network.pretrained.layer1.0                                  39712       1702     [16, 40, 32, 32]    float32 
+feature_network.pretrained.layer2.0                                  198480      5289     [16, 80, 16, 16]    float32 
+feature_network.pretrained.layer2.1                                  446784      7977     [16, 112, 16, 16]   float32 
+feature_network.pretrained.layer3.0                                  1652640     18060    [16, 192, 8, 8]     float32 
+feature_network.pretrained.layer3.1                                  605440      5251     [16, 320, 8, 8]     float32 
+feature_network.diffusion                                            -           -        [16, 24, 64, 64]    float32 
+feature_network.diffusion                                            -           -        [16, 40, 32, 32]    float32 
+feature_network.diffusion                                            -           -        [16, 112, 16, 16]   float32 
+feature_network.diffusion                                            -           -        [16, 320, 8, 8]     float32 
+feature_network.scratch.layer0_ccm                                   1600        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer1_ccm                                   5248        -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer2_ccm                                   28928       -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer3_ccm                                   164352      -        [16, 512, 8, 8]     float32 
+feature_network.scratch.layer3_csm.out_conv                          131328      -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.skip_add.activation_post_process  -           -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.out_conv                          32896       -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.skip_add.activation_post_process  -           -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.out_conv                          8256        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.skip_add.activation_post_process  -           -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.out_conv                          4160        -        [16, 64, 128, 128]  float32 
+discriminator.mini_discs.0.main                                      2829120     19269    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.1.main                                      2763392     18052    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.2.main                                      2631936     16643    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.3.main                                      2106880     13826    [16, 1, 5, 5]       float32 
+discriminator                                                        -           -        [16, 100]           float32 
+---                                                                  ---         ---      ---                 ---     
+Total                                                                13666944    107294   -                   -       
+
+Setting up augmentation...
+Distributing across 1 GPUs...
+Setting up training phases...
+Exporting sample images...
+Initializing logs...
+Training for 1 kimg...
+
+restart
+832 1 816 4
+0 False
+tick 50    kimg 0.8      time 4m 44s       sec/tick 225.4   sec/kimg 14088.51 maintenance 58.3   cpumem 4.47   gpumem 10.01  reserved 10.12  augment 0.008 T 9.0
+Evaluating metrics...
+
+Aborted!
+Loading training set...
+
+Num images:  93422
+Image shape: [3, 256, 256]
+Label shape: [0]
+
+Constructing networks...
+Resuming from "training-runs\00002-fastgan-lsun_church200k-gpus1-batch16-d_pos-first-noise_sd-0.5-target0.45-ada_kimg100\network-snapshot.pkl"
+
+Generator              Parameters  Buffers  Output shape         Datatype
+---                    ---         ---      ---                  ---     
+mapping                -           -        [16, 1, 256]         float32 
+synthesis.init.init    16785408    16385    [16, 2048, 4, 4]     float32 
+synthesis.feat_8.0     -           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.1     37748736    20480    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.2     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.3     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.4     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_8.5     18874368    11264    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.6     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.7     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.8     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_16.0    -           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.1    9437184     10240    [16, 1024, 16, 16]   float32 
+synthesis.feat_16.2    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.3    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.4    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_16.5    4718592     5632     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.6    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.7    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.8    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_32.0    -           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.1    2359296     5120     [16, 512, 32, 32]    float32 
+synthesis.feat_32.2    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.3    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.4    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_32.5    1179648     2816     [16, 512, 32, 32]    float32 
+synthesis.feat_32.6    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.7    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.8    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_64.0    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.1    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.2    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.3    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.4    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.5    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.6    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.7    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.8    -           -        [16, 256, 64, 64]    float32 
+synthesis.se_64.main   8454144     33536    [16, 256, 1, 1]      float32 
+synthesis.se_64        -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_128.0   -           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.1   589824      2560     [16, 256, 128, 128]  float32 
+synthesis.feat_128.2   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.3   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.4   -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_128.5   294912      1408     [16, 256, 128, 128]  float32 
+synthesis.feat_128.6   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.7   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.8   -           -        [16, 128, 128, 128]  float32 
+synthesis.se_128.main  2113536     16768    [16, 128, 1, 1]      float32 
+synthesis.se_128       -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_256.0   -           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.1   147456      1280     [16, 128, 256, 256]  float32 
+synthesis.feat_256.2   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.3   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.4   -           -        [16, 64, 256, 256]   float32 
+synthesis.feat_256.5   73728       704      [16, 128, 256, 256]  float32 
+synthesis.feat_256.6   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.7   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.8   -           -        [16, 64, 256, 256]   float32 
+synthesis.se_256.main  528384      8384     [16, 64, 1, 1]       float32 
+synthesis.se_256       -           -        [16, 64, 256, 256]   float32 
+synthesis.to_big       1731        579      [16, 3, 256, 256]    float32 
+---                    ---         ---      ---                  ---     
+Total                  105684175   160720   -                    -       
+
+
+ProjectedDiscriminator                                               Parameters  Buffers  Output shape        Datatype
+---                                                                  ---         ---      ---                 ---     
+feature_network.pretrained.layer0.0                                  864         -        [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.1                                  64          65       [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.3                                  896         98       [16, 16, 128, 128]  float32 
+feature_network.pretrained.layer0.4                                  13968       1062     [16, 24, 64, 64]    float32 
+feature_network.pretrained.layer1.0                                  39712       1702     [16, 40, 32, 32]    float32 
+feature_network.pretrained.layer2.0                                  198480      5289     [16, 80, 16, 16]    float32 
+feature_network.pretrained.layer2.1                                  446784      7977     [16, 112, 16, 16]   float32 
+feature_network.pretrained.layer3.0                                  1652640     18060    [16, 192, 8, 8]     float32 
+feature_network.pretrained.layer3.1                                  605440      5251     [16, 320, 8, 8]     float32 
+feature_network.diffusion                                            -           -        [16, 24, 64, 64]    float32 
+feature_network.diffusion                                            -           -        [16, 40, 32, 32]    float32 
+feature_network.diffusion                                            -           -        [16, 112, 16, 16]   float32 
+feature_network.diffusion                                            -           -        [16, 320, 8, 8]     float32 
+feature_network.scratch.layer0_ccm                                   1600        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer1_ccm                                   5248        -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer2_ccm                                   28928       -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer3_ccm                                   164352      -        [16, 512, 8, 8]     float32 
+feature_network.scratch.layer3_csm.out_conv                          131328      -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.skip_add.activation_post_process  -           -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.out_conv                          32896       -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.skip_add.activation_post_process  -           -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.out_conv                          8256        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.skip_add.activation_post_process  -           -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.out_conv                          4160        -        [16, 64, 128, 128]  float32 
+discriminator.mini_discs.0.main                                      2829120     19269    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.1.main                                      2763392     18052    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.2.main                                      2631936     16643    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.3.main                                      2106880     13826    [16, 1, 5, 5]       float32 
+discriminator                                                        -           -        [16, 100]           float32 
+---                                                                  ---         ---      ---                 ---     
+Total                                                                13666944    107294   -                   -       
+
+Setting up augmentation...
+Distributing across 1 GPUs...
+Setting up training phases...
+Exporting sample images...
+Initializing logs...
+Training for 25000 kimg...
+
+restart
+848 25000 832 4
+0 False
+tick 50    kimg 0.8      time 4m 37s       sec/tick 222.6   sec/kimg 13913.25 maintenance 54.3   cpumem 4.52   gpumem 10.01  reserved 10.12  augment 0.008 T 5.0
+Evaluating metrics...
+
+Aborted!
+Loading training set...
+
+Num images:  93422
+Image shape: [3, 256, 256]
+Label shape: [0]
+
+Constructing networks...
+Resuming from "training-runs\00002-fastgan-lsun_church200k-gpus1-batch16-d_pos-first-noise_sd-0.5-target0.45-ada_kimg100\network-snapshot.pkl"
+
+Generator              Parameters  Buffers  Output shape         Datatype
+---                    ---         ---      ---                  ---     
+mapping                -           -        [16, 1, 256]         float32 
+synthesis.init.init    16785408    16385    [16, 2048, 4, 4]     float32 
+synthesis.feat_8.0     -           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.1     37748736    20480    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.2     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.3     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.4     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_8.5     18874368    11264    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.6     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.7     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.8     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_16.0    -           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.1    9437184     10240    [16, 1024, 16, 16]   float32 
+synthesis.feat_16.2    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.3    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.4    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_16.5    4718592     5632     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.6    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.7    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.8    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_32.0    -           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.1    2359296     5120     [16, 512, 32, 32]    float32 
+synthesis.feat_32.2    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.3    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.4    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_32.5    1179648     2816     [16, 512, 32, 32]    float32 
+synthesis.feat_32.6    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.7    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.8    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_64.0    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.1    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.2    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.3    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.4    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.5    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.6    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.7    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.8    -           -        [16, 256, 64, 64]    float32 
+synthesis.se_64.main   8454144     33536    [16, 256, 1, 1]      float32 
+synthesis.se_64        -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_128.0   -           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.1   589824      2560     [16, 256, 128, 128]  float32 
+synthesis.feat_128.2   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.3   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.4   -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_128.5   294912      1408     [16, 256, 128, 128]  float32 
+synthesis.feat_128.6   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.7   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.8   -           -        [16, 128, 128, 128]  float32 
+synthesis.se_128.main  2113536     16768    [16, 128, 1, 1]      float32 
+synthesis.se_128       -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_256.0   -           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.1   147456      1280     [16, 128, 256, 256]  float32 
+synthesis.feat_256.2   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.3   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.4   -           -        [16, 64, 256, 256]   float32 
+synthesis.feat_256.5   73728       704      [16, 128, 256, 256]  float32 
+synthesis.feat_256.6   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.7   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.8   -           -        [16, 64, 256, 256]   float32 
+synthesis.se_256.main  528384      8384     [16, 64, 1, 1]       float32 
+synthesis.se_256       -           -        [16, 64, 256, 256]   float32 
+synthesis.to_big       1731        579      [16, 3, 256, 256]    float32 
+---                    ---         ---      ---                  ---     
+Total                  105684175   160720   -                    -       
+
+
+ProjectedDiscriminator                                               Parameters  Buffers  Output shape        Datatype
+---                                                                  ---         ---      ---                 ---     
+feature_network.pretrained.layer0.0                                  864         -        [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.1                                  64          65       [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.3                                  896         98       [16, 16, 128, 128]  float32 
+feature_network.pretrained.layer0.4                                  13968       1062     [16, 24, 64, 64]    float32 
+feature_network.pretrained.layer1.0                                  39712       1702     [16, 40, 32, 32]    float32 
+feature_network.pretrained.layer2.0                                  198480      5289     [16, 80, 16, 16]    float32 
+feature_network.pretrained.layer2.1                                  446784      7977     [16, 112, 16, 16]   float32 
+feature_network.pretrained.layer3.0                                  1652640     18060    [16, 192, 8, 8]     float32 
+feature_network.pretrained.layer3.1                                  605440      5251     [16, 320, 8, 8]     float32 
+feature_network.diffusion                                            -           -        [16, 24, 64, 64]    float32 
+feature_network.diffusion                                            -           -        [16, 40, 32, 32]    float32 
+feature_network.diffusion                                            -           -        [16, 112, 16, 16]   float32 
+feature_network.diffusion                                            -           -        [16, 320, 8, 8]     float32 
+feature_network.scratch.layer0_ccm                                   1600        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer1_ccm                                   5248        -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer2_ccm                                   28928       -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer3_ccm                                   164352      -        [16, 512, 8, 8]     float32 
+feature_network.scratch.layer3_csm.out_conv                          131328      -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.skip_add.activation_post_process  -           -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.out_conv                          32896       -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.skip_add.activation_post_process  -           -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.out_conv                          8256        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.skip_add.activation_post_process  -           -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.out_conv                          4160        -        [16, 64, 128, 128]  float32 
+discriminator.mini_discs.0.main                                      2829120     19269    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.1.main                                      2763392     18052    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.2.main                                      2631936     16643    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.3.main                                      2106880     13826    [16, 1, 5, 5]       float32 
+discriminator                                                        -           -        [16, 100]           float32 
+---                                                                  ---         ---      ---                 ---     
+Total                                                                13666944    107294   -                   -       
+
+Setting up augmentation...
+Distributing across 1 GPUs...
+Setting up training phases...
+Exporting sample images...
+Initializing logs...
+Training for 25000 kimg...
+
+restart
+864 25000 848 4
+0 False
+tick 50    kimg 0.9      time 4m 39s       sec/tick 221.9   sec/kimg 13865.72 maintenance 57.2   cpumem 4.46   gpumem 10.01  reserved 10.12  augment 0.008 T 5.0
+Evaluating metrics...
+{"results": {"fid50k_full": 298.30536453972746}, "metric": "fid50k_full", "total_time": 694.3421976566315, "total_time_str": "11m 34s", "num_gpus": 1, "snapshot_pkl": "network-snapshot.pkl", "timestamp": 1691982355.422355}
+51 864 710.7605204582214
+False
+restart
+880 25000 864 4
+0 False
+tick 51    kimg 0.9      time 16m 52s      sec/tick 22.3    sec/kimg 1396.30 maintenance 710.8  cpumem 11.06  gpumem 11.01  reserved 12.74  augment 0.008 T 5.0
+52 880 1.577284812927246
+False
+restart
+896 25000 880 4
+0 False
+tick 52    kimg 0.9      time 17m 18s      sec/tick 23.9    sec/kimg 1493.16 maintenance 1.6    cpumem 11.06  gpumem 11.01  reserved 12.74  augment 0.008 T 9.0
+53 896 0.007978677749633789
+False
+restart
+912 25000 896 4
+0 False
+tick 53    kimg 0.9      time 17m 38s      sec/tick 20.5    sec/kimg 1280.96 maintenance 0.0    cpumem 11.06  gpumem 11.01  reserved 12.74  augment 0.008 T 9.0
+54 912 1.7052783966064453
+False
+restart
+928 25000 912 4
+0 False
+tick 54    kimg 0.9      time 18m 02s      sec/tick 21.7    sec/kimg 1359.27 maintenance 1.7    cpumem 11.13  gpumem 11.01  reserved 12.74  augment 0.008 T 9.0
+55 928 1.6308910846710205
+False
+restart
+944 25000 928 4
+0 False
+tick 55    kimg 0.9      time 18m 24s      sec/tick 21.2    sec/kimg 1325.82 maintenance 1.6    cpumem 11.13  gpumem 11.01  reserved 12.74  augment 0.008 T 9.0
+56 944 1.6044116020202637
+False
+restart
+960 25000 944 4
+0 False
+tick 56    kimg 1.0      time 18m 49s      sec/tick 23.0    sec/kimg 1439.79 maintenance 1.6    cpumem 11.13  gpumem 11.01  reserved 12.74  augment 0.009 T 9.0
+57 960 0.007979631423950195
+False
+restart
+976 25000 960 4
+0 False
+tick 57    kimg 1.0      time 19m 09s      sec/tick 20.1    sec/kimg 1257.84 maintenance 0.0    cpumem 11.13  gpumem 11.01  reserved 12.74  augment 0.009 T 9.0
+58 976 1.7781059741973877
+False
+restart
+992 25000 976 4
+0 False
+tick 58    kimg 1.0      time 19m 31s      sec/tick 20.4    sec/kimg 1272.53 maintenance 1.8    cpumem 11.13  gpumem 11.01  reserved 12.74  augment 0.009 T 9.0
+59 992 1.7989006042480469
+False
+restart
+1008 25000 992 4
+0 False
+tick 59    kimg 1.0      time 19m 54s      sec/tick 20.7    sec/kimg 1291.50 maintenance 1.8    cpumem 11.13  gpumem 11.01  reserved 12.74  augment 0.009 T 9.0
+60 1008 1.666694164276123
+False
+restart
+1024 25000 1008 4
+0 False
+tick 60    kimg 1.0      time 20m 17s      sec/tick 21.9    sec/kimg 1370.91 maintenance 1.7    cpumem 11.13  gpumem 11.01  reserved 12.74  augment 0.010 T 10.0
+61 1024 0.007951021194458008
+False
+restart
+1040 25000 1024 4
+0 False
+tick 61    kimg 1.0      time 20m 38s      sec/tick 20.8    sec/kimg 1298.07 maintenance 0.0    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.010 T 10.0
+62 1040 1.8579394817352295
+False
+restart
+1056 25000 1040 4
+0 False
+tick 62    kimg 1.1      time 21m 00s      sec/tick 19.7    sec/kimg 1229.96 maintenance 1.9    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.010 T 10.0
+63 1056 1.5046749114990234
+False
+restart
+1072 25000 1056 4
+0 False
+tick 63    kimg 1.1      time 21m 21s      sec/tick 20.1    sec/kimg 1256.97 maintenance 1.5    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.010 T 10.0
+64 1072 1.7043356895446777
+False
+restart
+1088 25000 1072 4
+0 False
+tick 64    kimg 1.1      time 21m 45s      sec/tick 21.5    sec/kimg 1340.85 maintenance 1.7    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.010 T 10.0
+65 1088 0.007980823516845703
+False
+restart
+1104 25000 1088 4
+0 False
+tick 65    kimg 1.1      time 22m 04s      sec/tick 19.9    sec/kimg 1246.79 maintenance 0.0    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.010 T 10.0
+66 1104 1.5502450466156006
+False
+restart
+1120 25000 1104 4
+0 False
+tick 66    kimg 1.1      time 22m 26s      sec/tick 20.2    sec/kimg 1261.80 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.010 T 10.0
+67 1120 1.6365222930908203
+False
+restart
+1136 25000 1120 4
+0 False
+tick 67    kimg 1.1      time 22m 48s      sec/tick 20.0    sec/kimg 1251.66 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.010 T 10.0
+68 1136 1.6131515502929688
+False
+restart
+1152 25000 1136 4
+0 False
+tick 68    kimg 1.2      time 23m 11s      sec/tick 21.5    sec/kimg 1345.52 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.011 T 10.0
+69 1152 0.007386207580566406
+False
+restart
+1168 25000 1152 4
+0 False
+tick 69    kimg 1.2      time 23m 32s      sec/tick 20.9    sec/kimg 1305.16 maintenance 0.0    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.011 T 10.0
+70 1168 1.7829577922821045
+False
+restart
+1184 25000 1168 4
+0 False
+tick 70    kimg 1.2      time 23m 54s      sec/tick 20.8    sec/kimg 1299.70 maintenance 1.8    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.011 T 10.0
+71 1184 1.498706340789795
+False
+restart
+1200 25000 1184 4
+0 False
+tick 71    kimg 1.2      time 24m 17s      sec/tick 21.3    sec/kimg 1328.45 maintenance 1.5    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.011 T 10.0
+72 1200 1.7416298389434814
+False
+restart
+1216 25000 1200 4
+0 False
+tick 72    kimg 1.2      time 24m 41s      sec/tick 22.3    sec/kimg 1395.96 maintenance 1.7    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.012 T 11.0
+73 1216 0.007858037948608398
+False
+restart
+1232 25000 1216 4
+0 False
+tick 73    kimg 1.2      time 25m 01s      sec/tick 19.8    sec/kimg 1236.35 maintenance 0.0    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.012 T 11.0
+74 1232 1.7867562770843506
+False
+restart
+1248 25000 1232 4
+0 False
+tick 74    kimg 1.2      time 25m 23s      sec/tick 20.6    sec/kimg 1287.47 maintenance 1.8    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.012 T 11.0
+75 1248 1.5661232471466064
+False
+restart
+1264 25000 1248 4
+0 False
+tick 75    kimg 1.3      time 25m 46s      sec/tick 20.7    sec/kimg 1294.67 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.012 T 11.0
+76 1264 1.6444156169891357
+False
+restart
+1280 25000 1264 4
+0 False
+tick 76    kimg 1.3      time 26m 10s      sec/tick 22.2    sec/kimg 1384.44 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.012 T 11.0
+77 1280 0.007966756820678711
+False
+restart
+1296 25000 1280 4
+0 False
+tick 77    kimg 1.3      time 26m 30s      sec/tick 20.8    sec/kimg 1297.36 maintenance 0.0    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.012 T 11.0
+78 1296 1.6614487171173096
+False
+restart
+1312 25000 1296 4
+0 False
+tick 78    kimg 1.3      time 26m 53s      sec/tick 20.9    sec/kimg 1306.65 maintenance 1.7    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.012 T 11.0
+79 1312 1.6407585144042969
+False
+restart
+1328 25000 1312 4
+0 False
+tick 79    kimg 1.3      time 27m 14s      sec/tick 19.3    sec/kimg 1205.90 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.012 T 11.0
+80 1328 1.5991427898406982
+False
+restart
+1344 25000 1328 4
+0 False
+tick 80    kimg 1.3      time 27m 37s      sec/tick 21.3    sec/kimg 1329.52 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.013 T 11.0
+81 1344 0.007978200912475586
+False
+restart
+1360 25000 1344 4
+0 False
+tick 81    kimg 1.4      time 27m 57s      sec/tick 19.8    sec/kimg 1240.56 maintenance 0.0    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.013 T 11.0
+82 1360 1.5560636520385742
+False
+restart
+1376 25000 1360 4
+0 False
+tick 82    kimg 1.4      time 28m 18s      sec/tick 19.6    sec/kimg 1227.16 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.013 T 11.0
+83 1376 1.5178472995758057
+False
+restart
+1392 25000 1376 4
+0 False
+tick 83    kimg 1.4      time 28m 40s      sec/tick 20.7    sec/kimg 1296.29 maintenance 1.5    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.013 T 11.0
+84 1392 1.527904748916626
+False
+restart
+1408 25000 1392 4
+0 False
+tick 84    kimg 1.4      time 29m 03s      sec/tick 21.8    sec/kimg 1362.65 maintenance 1.5    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.013 T 12.0
+85 1408 0.007914066314697266
+False
+restart
+1424 25000 1408 4
+0 False
+tick 85    kimg 1.4      time 29m 23s      sec/tick 19.7    sec/kimg 1233.46 maintenance 0.0    cpumem 11.12  gpumem 11.00  reserved 12.74  augment 0.013 T 12.0
+86 1424 1.4844727516174316
+False
+restart
+1440 25000 1424 4
+0 False
+tick 86    kimg 1.4      time 29m 44s      sec/tick 19.7    sec/kimg 1233.46 maintenance 1.5    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.013 T 12.0
+87 1440 1.521576166152954
+False
+restart
+1456 25000 1440 4
+0 False
+tick 87    kimg 1.5      time 30m 06s      sec/tick 19.9    sec/kimg 1243.29 maintenance 1.5    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.013 T 12.0
+88 1456 1.627662181854248
+False
+restart
+1472 25000 1456 4
+0 False
+tick 88    kimg 1.5      time 30m 29s      sec/tick 21.6    sec/kimg 1347.72 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.014 T 12.0
+89 1472 0.007978677749633789
+False
+restart
+1488 25000 1472 4
+0 False
+tick 89    kimg 1.5      time 30m 49s      sec/tick 19.6    sec/kimg 1227.22 maintenance 0.0    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.014 T 12.0
+90 1488 1.637582540512085
+False
+restart
+1504 25000 1488 4
+0 False
+tick 90    kimg 1.5      time 31m 10s      sec/tick 20.0    sec/kimg 1252.61 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.014 T 12.0
+91 1504 1.6468455791473389
+False
+restart
+1520 25000 1504 4
+0 False
+tick 91    kimg 1.5      time 31m 32s      sec/tick 20.5    sec/kimg 1279.33 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.014 T 12.0
+92 1520 1.664947271347046
+False
+restart
+1536 25000 1520 4
+0 False
+tick 92    kimg 1.5      time 31m 56s      sec/tick 21.5    sec/kimg 1344.94 maintenance 1.7    cpumem 11.12  gpumem 11.00  reserved 12.74  augment 0.015 T 12.0
+93 1536 0.007863044738769531
+False
+restart
+1552 25000 1536 4
+0 False
+tick 93    kimg 1.6      time 32m 16s      sec/tick 20.7    sec/kimg 1292.79 maintenance 0.0    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.015 T 12.0
+94 1552 1.6366243362426758
+False
+restart
+1568 25000 1552 4
+0 False
+tick 94    kimg 1.6      time 32m 39s      sec/tick 21.1    sec/kimg 1318.04 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.015 T 12.0
+95 1568 1.656578540802002
+False
+restart
+1584 25000 1568 4
+0 False
+tick 95    kimg 1.6      time 33m 01s      sec/tick 20.5    sec/kimg 1282.49 maintenance 1.7    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.015 T 12.0
+96 1584 1.8299577236175537
+False
+restart
+1600 25000 1584 4
+0 False
+tick 96    kimg 1.6      time 33m 26s      sec/tick 22.9    sec/kimg 1432.87 maintenance 1.8    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.015 T 13.0
+97 1600 0.007981061935424805
+False
+restart
+1616 25000 1600 4
+0 False
+tick 97    kimg 1.6      time 33m 47s      sec/tick 21.2    sec/kimg 1323.61 maintenance 0.0    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.015 T 13.0
+98 1616 1.5863382816314697
+False
+restart
+1632 25000 1616 4
+0 False
+tick 98    kimg 1.6      time 34m 10s      sec/tick 21.6    sec/kimg 1347.98 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.015 T 13.0
+99 1632 1.7067301273345947
+False
+restart
+1648 25000 1632 4
+0 False
+tick 99    kimg 1.6      time 34m 32s      sec/tick 20.4    sec/kimg 1274.17 maintenance 1.7    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.015 T 13.0
+100 1648 1.638375997543335
+False
+restart
+1664 25000 1648 4
+0 False
+tick 100   kimg 1.7      time 34m 56s      sec/tick 22.0    sec/kimg 1376.04 maintenance 1.6    cpumem 11.12  gpumem 11.01  reserved 12.74  augment 0.016 T 13.0
+Evaluating metrics...
+
+Aborted!
+Loading training set...
+
+Num images:  93422
+Image shape: [3, 256, 256]
+Label shape: [0]
+
+Constructing networks...
+Resuming from "training-runs\00002-fastgan-lsun_church200k-gpus1-batch16-d_pos-first-noise_sd-0.5-target0.45-ada_kimg100\network-snapshot.pkl"
+
+Aborted!
+Loading training set...
+
+Num images:  93422
+Image shape: [3, 256, 256]
+Label shape: [0]
+0 256 3
+
+Constructing networks...
+Resuming from "training-runs\00002-fastgan-lsun_church200k-gpus1-batch16-d_pos-first-noise_sd-0.5-target0.45-ada_kimg100\network-snapshot.pkl"
+
+Aborted!
+Loading training set...
+
+Num images:  93422
+Image shape: [3, 256, 256]
+Label shape: [0]
+0 256 3
+
+Constructing networks...
+Resuming from "training-runs\00002-fastgan-lsun_church200k-gpus1-batch16-d_pos-first-noise_sd-0.5-target0.45-ada_kimg100\network-snapshot.pkl"
+
+Generator              Parameters  Buffers  Output shape         Datatype
+---                    ---         ---      ---                  ---     
+mapping                -           -        [16, 1, 256]         float32 
+synthesis.init.init    16785408    16385    [16, 2048, 4, 4]     float32 
+synthesis.feat_8.0     -           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.1     37748736    20480    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.2     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.3     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.4     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_8.5     18874368    11264    [16, 2048, 8, 8]     float32 
+synthesis.feat_8.6     1           -        [16, 2048, 8, 8]     float32 
+synthesis.feat_8.7     4096        4097     [16, 2048, 8, 8]     float32 
+synthesis.feat_8.8     -           -        [16, 1024, 8, 8]     float32 
+synthesis.feat_16.0    -           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.1    9437184     10240    [16, 1024, 16, 16]   float32 
+synthesis.feat_16.2    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.3    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.4    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_16.5    4718592     5632     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.6    1           -        [16, 1024, 16, 16]   float32 
+synthesis.feat_16.7    2048        2049     [16, 1024, 16, 16]   float32 
+synthesis.feat_16.8    -           -        [16, 512, 16, 16]    float32 
+synthesis.feat_32.0    -           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.1    2359296     5120     [16, 512, 32, 32]    float32 
+synthesis.feat_32.2    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.3    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.4    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_32.5    1179648     2816     [16, 512, 32, 32]    float32 
+synthesis.feat_32.6    1           -        [16, 512, 32, 32]    float32 
+synthesis.feat_32.7    1024        1025     [16, 512, 32, 32]    float32 
+synthesis.feat_32.8    -           -        [16, 256, 32, 32]    float32 
+synthesis.feat_64.0    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.1    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.2    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.3    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.4    -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_64.5    1179648     2816     [16, 512, 64, 64]    float32 
+synthesis.feat_64.6    1           -        [16, 512, 64, 64]    float32 
+synthesis.feat_64.7    1024        1025     [16, 512, 64, 64]    float32 
+synthesis.feat_64.8    -           -        [16, 256, 64, 64]    float32 
+synthesis.se_64.main   8454144     33536    [16, 256, 1, 1]      float32 
+synthesis.se_64        -           -        [16, 256, 64, 64]    float32 
+synthesis.feat_128.0   -           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.1   589824      2560     [16, 256, 128, 128]  float32 
+synthesis.feat_128.2   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.3   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.4   -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_128.5   294912      1408     [16, 256, 128, 128]  float32 
+synthesis.feat_128.6   1           -        [16, 256, 128, 128]  float32 
+synthesis.feat_128.7   512         513      [16, 256, 128, 128]  float32 
+synthesis.feat_128.8   -           -        [16, 128, 128, 128]  float32 
+synthesis.se_128.main  2113536     16768    [16, 128, 1, 1]      float32 
+synthesis.se_128       -           -        [16, 128, 128, 128]  float32 
+synthesis.feat_256.0   -           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.1   147456      1280     [16, 128, 256, 256]  float32 
+synthesis.feat_256.2   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.3   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.4   -           -        [16, 64, 256, 256]   float32 
+synthesis.feat_256.5   73728       704      [16, 128, 256, 256]  float32 
+synthesis.feat_256.6   1           -        [16, 128, 256, 256]  float32 
+synthesis.feat_256.7   256         257      [16, 128, 256, 256]  float32 
+synthesis.feat_256.8   -           -        [16, 64, 256, 256]   float32 
+synthesis.se_256.main  528384      8384     [16, 64, 1, 1]       float32 
+synthesis.se_256       -           -        [16, 64, 256, 256]   float32 
+synthesis.to_big       1731        579      [16, 3, 256, 256]    float32 
+---                    ---         ---      ---                  ---     
+Total                  105684175   160720   -                    -       
+
+
+ProjectedDiscriminator                                               Parameters  Buffers  Output shape        Datatype
+---                                                                  ---         ---      ---                 ---     
+feature_network.pretrained.layer0.0                                  864         -        [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.1                                  64          65       [16, 32, 128, 128]  float32 
+feature_network.pretrained.layer0.3                                  896         98       [16, 16, 128, 128]  float32 
+feature_network.pretrained.layer0.4                                  13968       1062     [16, 24, 64, 64]    float32 
+feature_network.pretrained.layer1.0                                  39712       1702     [16, 40, 32, 32]    float32 
+feature_network.pretrained.layer2.0                                  198480      5289     [16, 80, 16, 16]    float32 
+feature_network.pretrained.layer2.1                                  446784      7977     [16, 112, 16, 16]   float32 
+feature_network.pretrained.layer3.0                                  1652640     18060    [16, 192, 8, 8]     float32 
+feature_network.pretrained.layer3.1                                  605440      5251     [16, 320, 8, 8]     float32 
+feature_network.diffusion                                            -           -        [16, 24, 64, 64]    float32 
+feature_network.diffusion                                            -           -        [16, 40, 32, 32]    float32 
+feature_network.diffusion                                            -           -        [16, 112, 16, 16]   float32 
+feature_network.diffusion                                            -           -        [16, 320, 8, 8]     float32 
+feature_network.scratch.layer0_ccm                                   1600        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer1_ccm                                   5248        -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer2_ccm                                   28928       -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer3_ccm                                   164352      -        [16, 512, 8, 8]     float32 
+feature_network.scratch.layer3_csm.out_conv                          131328      -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.skip_add.activation_post_process  -           -        [16, 256, 16, 16]   float32 
+feature_network.scratch.layer2_csm.out_conv                          32896       -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.skip_add.activation_post_process  -           -        [16, 128, 32, 32]   float32 
+feature_network.scratch.layer1_csm.out_conv                          8256        -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.skip_add.activation_post_process  -           -        [16, 64, 64, 64]    float32 
+feature_network.scratch.layer0_csm.out_conv                          4160        -        [16, 64, 128, 128]  float32 
+discriminator.mini_discs.0.main                                      2829120     19269    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.1.main                                      2763392     18052    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.2.main                                      2631936     16643    [16, 1, 5, 5]       float32 
+discriminator.mini_discs.3.main                                      2106880     13826    [16, 1, 5, 5]       float32 
+discriminator                                                        -           -        [16, 100]           float32 
+---                                                                  ---         ---      ---                 ---     
+Total                                                                13666944    107294   -                   -       
+
+Setting up augmentation...
+Distributing across 1 GPUs...
+Setting up training phases...
+Exporting sample images...
+[]
+
+Aborted!
